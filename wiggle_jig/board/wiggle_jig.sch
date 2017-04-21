@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -12875,6 +12875,8 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="ORGANIZATION" value="Biomimetic Millisystems Lab"/>
 <attribute name="REVISION" value="r0.0"/>
 </part>
+<part name="GND4" library="supply1" deviceset="GND" device=""/>
+<part name="GND5" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12937,6 +12939,8 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="ORGANIZATION" x="2.54" y="93.98" size="1.778" layer="96" display="off"/>
 <attribute name="REVISION" x="2.54" y="93.98" size="1.778" layer="96" display="off"/>
 </instance>
+<instance part="GND4" gate="1" x="205.74" y="68.58" rot="R270"/>
+<instance part="GND5" gate="1" x="147.32" y="68.58" rot="R270"/>
 </instances>
 <busses>
 <bus name="B$1">
@@ -13023,6 +13027,16 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <pinref part="ENC1" gate="G$1" pin="1"/>
 <pinref part="GND9" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="MOT1" gate="G$1" pin="D1/!PWM"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+<wire x1="208.28" y1="68.58" x2="213.36" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="MOT0" gate="G$1" pin="D1/!PWM"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="149.86" y1="68.58" x2="154.94" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
