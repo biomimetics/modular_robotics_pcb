@@ -6390,7 +6390,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="GALVO_DIR" gate="G$1" x="55.88" y="58.42" rot="R180"/>
 <instance part="GALVO_SEL" gate="G$1" x="55.88" y="33.02" rot="R180"/>
 <instance part="GALVO_PULSE" gate="G$1" x="55.88" y="45.72" rot="R180"/>
-<instance part="GALVO_SENSE" gate="G$1" x="172.72" y="40.64"/>
+<instance part="GALVO_SENSE" gate="G$1" x="180.34" y="40.64"/>
 <instance part="R3" gate="G$1" x="68.58" y="53.34"/>
 <instance part="GND2" gate="1" x="63.5" y="17.78"/>
 <instance part="R4" gate="G$1" x="68.58" y="27.94"/>
@@ -6562,7 +6562,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <junction x="134.62" y="10.16"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="DIR" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="U$1" gate="A" pin="IN1"/>
@@ -6578,9 +6578,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="106.68" y1="40.64" x2="111.76" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G2" pin="I"/>
 <junction x="73.66" y="53.34"/>
+<label x="60.96" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="SEL" class="0">
 <segment>
 <pinref part="U$6" gate="G$1" pin="C"/>
 <pinref part="GALVO_SEL" gate="G$1" pin="1"/>
@@ -6595,9 +6596,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="73.66" y1="33.02" x2="73.66" y2="27.94" width="0.1524" layer="91"/>
 <junction x="73.66" y="33.02"/>
 <junction x="73.66" y="27.94"/>
+<label x="73.66" y="33.02" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="PULSE" class="0">
 <segment>
 <pinref part="U$1" gate="A" pin="PWM"/>
 <wire x1="111.76" y1="53.34" x2="104.14" y2="53.34" width="0.1524" layer="91"/>
@@ -6612,6 +6614,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="73.66" y1="45.72" x2="104.14" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="40.64" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
 <junction x="73.66" y="45.72"/>
+<label x="78.74" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -6638,7 +6641,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <junction x="165.1" y="25.4"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="SENSE" class="0">
 <segment>
 <pinref part="U$7" gate="A" pin="S"/>
 <wire x1="167.64" y1="48.26" x2="162.56" y2="48.26" width="0.1524" layer="91"/>
@@ -6647,7 +6650,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="162.56" y1="40.64" x2="162.56" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="27.94" x2="167.64" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="GALVO_SENSE" gate="G$1" pin="1"/>
-<wire x1="167.64" y1="40.64" x2="162.56" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="40.64" x2="162.56" y2="40.64" width="0.1524" layer="91"/>
 <junction x="162.56" y="40.64"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <pinref part="R2" gate="G$1" pin="1"/>
@@ -6655,9 +6658,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="160.02" y1="40.64" x2="160.02" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="162.56" y1="40.64" x2="160.02" y2="40.64" width="0.1524" layer="91"/>
 <junction x="160.02" y="40.64"/>
+<label x="165.1" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="LASER_PWM" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
 <pinref part="LASER_PWM" gate="G$1" pin="1"/>
@@ -6665,6 +6669,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <junction x="111.76" y="-5.08"/>
 <pinref part="U$3" gate="G$1" pin="RIN"/>
 <wire x1="134.62" y1="-5.08" x2="111.76" y2="-5.08" width="0.1524" layer="91"/>
+<label x="111.76" y="-5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$12" class="0">
